@@ -6,6 +6,7 @@ import com.scuse.dto.OpResult;
 import com.scuse.dto.Result;
 import com.scuse.entity.Batch;
 import com.scuse.mapper.BatchMapper;
+import org.apache.catalina.startup.ClassLoaderFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -17,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * Batch 相关跨表操作
  */
-
 @Repository
 public class BatchService {
 
